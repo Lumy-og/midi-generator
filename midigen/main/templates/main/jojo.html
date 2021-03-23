@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% load static %}
+        	<link href="{% static 'vendor/bootstrap-select/dist/css/bootstrap-select.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<main class="flex-shrink-0" style="height:150px;background-color:red">
+  <div class="container">
+
+{% load static %}
+
+
+   <midi-player
+  src="{% static 'happy.mid' %}"
+
+  sound-font visualizer="#myPianoRollVisualizer">
+</midi-player>
+
+<midi-visualizer type="piano-roll" id="myPianoRollVisualizer"
+  src="{% static 'happy.mid' %}">
+</midi-visualizer>
+<a href="{% static 'happy.mid' %}" download="{% static 'happy.mid' %}">download</a>
+
+
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
+
+<div class="row">
+    <div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Happy midi</h4>
+                                    <p class="text-justify card-titl" style="margin:0;padding:0;"><a href="{% static 'sad.mid' %}" download="{% static 'sad.mid' %}">download</a></p>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                  <midi-player src="{% static 'happy.mid' %}"  sound-font visualizer="#myPianoRollVisualizer" style="width:100%">
+</midi-player>
+                                    <midi-visualizer type="piano-roll" id="myPianoRollVisualizer" src="{% static 'happy.mid' %}" style="width:100%;"> </midi-visualizer>
+
+                                </div>
+                            </div>
+                        </div>
+					</div>
+    <div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Sad midi</h4>
+<p class="text-justify card-titl" style="margin:0;padding:0;"><a href="{% static 'sad.mid' %}" download="{% static 'sad.mid' %}">download</a></p>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
+                                   <midi-player src="{% static 'sad.mid' %}"  sound-font visualizer="#myPianoRollVisualizer" style="width:100%">
+</midi-player>
+                                    <midi-visualizer type="piano-roll" id="myPianoRollVisualizer" src="{% static 'sad.mid' %}" style="width:100%;"> </midi-visualizer>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+					</div>
+
+
+</div>
+
+
+
+  </div>
+</main>
+
+</body>
+</html>
