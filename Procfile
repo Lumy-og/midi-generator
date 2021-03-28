@@ -1,1 +1,1 @@
-worker: html form-element.html
+worker: python manage.py
