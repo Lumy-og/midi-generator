@@ -1,0 +1,205 @@
+# from pyknon.genmidi import Midi
+# from pyknon.music import NoteSeq
+# from melody_properties import MelodyProperties
+# import random
+# notes1 = NoteSeq("Bb4 F#8 A Bb4 G#")
+# ae=random.randint(1,100)
+# print(ae)
+# midi = Midi(1, tempo=120,instrument =100)
+# midi.seq_notes(notes1, track=0)
+# midi.write("demo132.mid")
+# help(Midi)
+
+
+
+
+
+
+
+# notes1 = NoteSeq("D4 F#8 A Bb4 G#")
+# midi = Midi(1, tempo=90)
+# midi.seq_notes(notes1, track=0)
+# midi.write("demo1.mid")
+
+# hj=['chord1','chord2','chord3','chord4','chord5','chord6','chord7','chord8','chord9','chord10','chord11',
+#     'chord12','chord12','chord13','chord14','chord15','chord16','chord17','chord18','chord19',]
+
+
+   # seqlist.append(locals().get(ass[h]))
+
+
+
+
+
+
+
+
+#
+# ran1=random.randint(0,18)
+# ran2=random.randint(0,18)
+# ran3=random.randint(0,18)
+# ran4=random.randint(0,18)
+# ran5=random.randint(0,18)
+# ran6=random.randint(0,18)
+# ran7=random.randint(0,18)
+# ran8=random.randint(0,18)
+# ran9=random.randint(0,18)
+# ran10=random.randint(0,18)
+# ran11=random.randint(0,18)
+# ran12=random.randint(0,18)
+# ran13=random.randint(0,18)
+# ran14=random.randint(0,18)
+# ran15=random.randint(0,18)
+# ran16=random.randint(0,18)
+# ran17=random.randint(0,18)
+# ran18=random.randint(0,18)
+# ran19=random.randint(0,18)
+
+# print(hj[ran1])
+
+# a1=hj[ran1]
+# a2=hj[ran2]
+# a3=hj[ran3]
+# a4=hj[ran4]
+# a5=hj[ran5]
+# a6=hj[ran6]
+# a7=hj[ran7]
+# a8=hj[ran8]
+# a9=hj[ran9]
+# a10=hj[ran10]
+# a11=hj[ran11]
+# a12=hj[ran12]
+# a13=hj[ran13]
+# a14=hj[ran14]
+# a15=hj[ran15]
+# a16=hj[ran16]
+# a17=hj[ran17]
+# a18=hj[ran18]
+# a19=hj[ran19]
+
+
+
+
+
+
+# chord2 = NoteSeq()
+# chord3 = NoteSeq()
+# chord4 = NoteSeq()
+# chord5 = NoteSeq()
+# chord6 = NoteSeq()
+# chord7 = NoteSeq()
+# chord8 = NoteSeq()
+# chord9 = NoteSeq()
+# chord10 = NoteSeq()
+# chord11 = NoteSeq()
+# chord12 = NoteSeq()
+# chord13 = NoteSeq()
+# chord14 = NoteSeq()
+# chord15 = NoteSeq()
+# chord16 = NoteSeq()
+# chord17 = NoteSeq()
+# chord18 = NoteSeq()
+# chord19 = NoteSeq()
+
+
+
+
+
+
+
+# seqlist =[chord[0],chord[1],chord[2],chord[3],chord[4],chord[5],chord[6],chord[7],chord[8],chord[9],chord[10],chord[11],chord[12],chord[13],chord[14],chord[15],chord[16],chord[17],chord[18],chord[19]]
+
+
+
+# help(Midi)
+
+# def demo():
+#     notes1 = NoteSeq('D4 F#8 A Bb4')
+#     notes2 = NoteSeq([Note(2, dur=1/4), Note(6, dur=1/8),
+#                     Note(9, dur=1/8), Note(10, dur=1/4)])
+#     midi = Midi(number_tracks=2, tempo=90)
+#     midi.seq_notes(notes1, track=0)
+#     midi.seq_notes(notes2, track=1)
+#     midi.write('demo.mid')
+#
+# demo()
+
+
+
+# x=0
+# def random_notes(pitch_list, octave_list, duration,
+#                 number_of_notes, volume=120):
+#     result = NoteSeq()
+#     global x
+#     for x in range(0, number_of_notes):
+#         pitch = choice(pitch_list)
+#         octave = choice_if_list(octave_list)
+#         dur = choice_if_list(duration)
+#         vol = choice_if_list(volume)
+#         result.append(Note(pitch, octave, dur, vol))
+#     return result
+#
+#
+#
+#
+#
+# def random1():
+#     chromatic = range(0, 12)
+#     durations = [1/64, 1/32, 1/16, 1/8, 1/4, 1/2, 1]
+#     notes1 = random_notes(chromatic, range(0, 9),durations,100, range(0, 128, 20))
+#     gen_midi('random1.mid', notes1)
+#
+#
+# random1()
+#
+#
+#
+# def random2():
+#
+#     chromatic = range(0, 12)
+#     notes2 = random_notes(chromatic,
+#     range(3, 7),[1/16, 1/8],100)
+#     gen_midi('random2.mid', notes2)
+#
+#
+# random2()
+
+
+# def random3():
+#     pentatonic = [0, 2, 4, 7, 9]
+#     notes = random_notes(pentatonic,range(5, 7),1/16,100)
+#     gen_midi('random3.mid', notes)
+# random3()
+
+
+# def random_fib():
+#     octave = range(5, 7)
+#     fib = fibonacci(100000000000)
+#     pascal = flatten(pascals_triangle(30))
+#     n1 = play_list(fib, octave, 1/16)
+#     n2 = play_list(pascal, 4, 1/16)
+#     n3 = play_list(pascal, octave, 1/16)
+#     gen_midi('fibonnacci.mid', n1)
+#     gen_midi('pascal.mid', n2)
+#     gen_midi('pascal_octaves.mid', n3)
+# random_fib()
+
+#
+# def gen_patterns(pattern, number_rotations=12, repeat=4):
+#     result = NoteSeq()
+#     for n in range(0, number_rotations):
+#         rotation = pattern.rotate(n)
+#         result.extend(rotation * repeat)
+#     return result
+# # gen_patterns()
+# def piano_phase(number_rotations=12, repeat=4):
+#     pattern = NoteSeq('E16 F# B C#’’ D’’ F#’ E C#’’ B’ F# D’’ C#')
+#     piano1 = pattern * (number_rotations + 1) * repeat
+#     piano2 = gen_patterns(pattern, number_rotations, repeat)
+#     midi = Midi(2, tempo=108)
+#     midi.seq_notes(piano1)
+#     midi.seq_notes(piano2, track=1, time=3*repeat)
+#     midi.write('piano-phase.mid')
+#
+#
+# piano_phase()
